@@ -18,4 +18,7 @@ export class TodoListService {
     return this.todoList;
   }
 
+  addItem(item): void {
+    this.todoList.push(item);
+}
 }
