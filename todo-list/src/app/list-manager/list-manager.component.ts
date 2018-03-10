@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'todo-list-manager',
   template: `
+  <div class="todo-app">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -12,18 +13,19 @@ import { Component, OnInit } from '@angular/core';
       <todo-item [todoItem]="item"></todo-item>
     </li>
   </ul>
+  </div>
   `,
   styleUrls: ['./list-manager.component.css']
 })
 export class ListManagerComponent implements OnInit {
   title = 'NgGirls todo app';
   public todoList = [
-    {title: 'install NodeJS'},
-    {title: 'install Angular CLI'},
-    {title: 'create new app'},
-    {title: 'serve app'},
-    {title: 'develop app'},
-    {title: 'deploy app'},
+    { title: 'install NodeJS' },
+    { title: 'install Angular CLI' },
+    { title: 'create new app' },
+    { title: 'serve app' },
+    { title: 'develop app' },
+    { title: 'deploy app' },
   ];
 
   ngOnInit(): void {

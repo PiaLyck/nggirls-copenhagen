@@ -3,6 +3,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'todo-input',
   template: `
+  <div class="todo-input">
   <input
   type="text"
   [value]="title"
@@ -11,6 +12,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
   <button (click)="changeTitle(inputElement.value)">Save</button>
   <p>The title is {{ title }}</p>
+  </div>
   `,
   styleUrls: ['./input.component.css']
 })
