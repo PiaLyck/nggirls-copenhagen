@@ -3,7 +3,10 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'todo-item',
   template: `
+  <div class="todo-item">
   {{ todoItem.title }}
+  <button class="btn-red">Remove</button>
+  </div>
   `,
   styleUrls: ['./item.component.css']
 })
