@@ -1,17 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'todo-item',
   template: `
-    <p>
-      item works!
-    </p>
+    {{ itemTitle }}
   `,
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-
-  constructor() { }
+  @Input() itemTitle: string;
+  constructor() {
+  }
 
   ngOnInit() {
   }
