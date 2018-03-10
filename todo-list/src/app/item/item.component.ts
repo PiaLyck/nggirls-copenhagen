@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   template: `
   <div class="todo-item">
   {{ todoItem.title }}
-  <button class="btn-red">Remove</button>
+  <button class="btn-red btn">Remove</button>
   </div>
   `,
   styleUrls: ['./item.component.css']

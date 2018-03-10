@@ -10,7 +10,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   (keyup.enter)="changeTitle($event.target.value)"
   #inputElement>
 
-  <button (click)="changeTitle(inputElement.value)">Save</button>
+  <button class="btn" (click)="changeTitle(inputElement.value)">Save</button>
   <p>The title is {{ title }}</p>
   </div>
   `,
